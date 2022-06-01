@@ -2,8 +2,11 @@ import os
 import re
 import shutil
 import time
+import numpy as np
 
 from others import pyrouge
+from rouge_score import rouge_scorer
+
 
 REMAP = {"-lrb-": "(", "-rrb-": ")", "-lcb-": "{", "-rcb-": "}",
          "-lsb-": "[", "-rsb-": "]", "``": '"', "''": '"'}
@@ -51,7 +54,13 @@ def process(params):
     return results_dict
 
 
-def test_rouge(temp_dir, cand, ref):
+# ADDED BY ME
+def get_rouge_score(summary, prediction):
+    scorer = rouge_scorer.RougeScorer(['rouge1', 'rouge2', 'rougeLsum'], use_stemmer=False)
+    return scorer.score(summary, prediction)
+
+
+def test_rouge(temp_dir, cand, ref, logger):
     candidates = [line.strip() for line in open(cand, encoding='utf-8')]
     references = [line.strip() for line in open(ref, encoding='utf-8')]
     print(len(candidates))
@@ -59,35 +68,53 @@ def test_rouge(temp_dir, cand, ref):
     assert len(candidates) == len(references)
 
     cnt = len(candidates)
-    current_time = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime())
-    tmp_dir = os.path.join(temp_dir, "rouge-tmp-{}".format(current_time))
-    if not os.path.isdir(tmp_dir):
-        os.mkdir(tmp_dir)
-        os.mkdir(tmp_dir + "/candidate")
-        os.mkdir(tmp_dir + "/reference")
-    try:
+    
+    # current_time = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime())
+    # tmp_dir = os.path.join(temp_dir, "rouge-tmp-{}".format(current_time))
+    # if not os.path.isdir(tmp_dir):
+    #     os.mkdir(tmp_dir)
+    #     os.mkdir(tmp_dir + "/candidate")
+    #     os.mkdir(tmp_dir + "/reference")
+    # try:
 
-        for i in range(cnt):
-            if len(references[i]) < 1:
-                continue
-            with open(tmp_dir + "/candidate/cand.{}.txt".format(i), "w",
-                      encoding="utf-8") as f:
-                f.write(candidates[i])
-            with open(tmp_dir + "/reference/ref.{}.txt".format(i), "w",
-                      encoding="utf-8") as f:
-                f.write(references[i])
-        r = pyrouge.Rouge155(temp_dir=temp_dir)
-        r.model_dir = tmp_dir + "/reference/"
-        r.system_dir = tmp_dir + "/candidate/"
-        r.model_filename_pattern = 'ref.#ID#.txt'
-        r.system_filename_pattern = r'cand.(\d+).txt'
-        rouge_results = r.convert_and_evaluate()
-        print(rouge_results)
-        results_dict = r.output_to_dict(rouge_results)
-    finally:
-        pass
-        if os.path.isdir(tmp_dir):
-            shutil.rmtree(tmp_dir)
+    #     for i in range(cnt):
+    #         if len(references[i]) < 1:
+    #             continue
+    #         with open(tmp_dir + "/candidate/cand.{}.txt".format(i), "w",
+    #                   encoding="utf-8") as f:
+    #             f.write(candidates[i])
+    #         with open(tmp_dir + "/reference/ref.{}.txt".format(i), "w",
+    #                   encoding="utf-8") as f:
+    #             f.write(references[i])
+        
+        
+    #     r = pyrouge.Rouge155(temp_dir=temp_dir)
+    #     r.model_dir = tmp_dir + "/reference/"
+    #     r.system_dir = tmp_dir + "/candidate/"
+    #     r.model_filename_pattern = 'ref.#ID#.txt'
+    #     r.system_filename_pattern = r'cand.(\d+).txt'
+    #     rouge_results = r.convert_and_evaluate()
+    #     print(rouge_results)
+    #     results_dict = r.output_to_dict(rouge_results)
+    # finally:
+    #     pass
+    #     if os.path.isdir(tmp_dir):
+    #         shutil.rmtree(tmp_dir)
+
+    scores = []
+    
+    for i in range(cnt):
+        rs = get_rouge_score(references[i].replace("<q>", "\n"), candidates[i].replace("<q>", "\n"))
+        scores.append(rs)
+        
+    results_dict = {
+        "rouge_1_f_score": np.mean([s['rouge1'].fmeasure for s in scores]),
+        "rouge_2_f_score": np.mean([s['rouge2'].fmeasure for s in scores]),
+        "rouge_l_f_score": np.mean([s['rougeLsum'].fmeasure for s in scores]),
+        "rouge_1_recall": np.mean([s['rouge1'].recall for s in scores]),
+        "rouge_2_recall": np.mean([s['rouge2'].recall for s in scores]),
+        "rouge_l_recall": np.mean([s['rougeLsum'].recall for s in scores]),
+    }
     return results_dict
 
 

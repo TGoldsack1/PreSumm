@@ -1,0 +1,806 @@
+/home/acp20tg/PreSumm/src
+/home/acp20tg/PreSumm/src
+[2022-04-23 12:04:25,604 INFO]  Starting process pid: 36255  
+[2022-04-23 12:04:25,608 INFO]  Starting process pid: 36256  
+[2022-04-23 12:04:27,916 INFO] Device ID 0
+[2022-04-23 12:04:27,916 INFO] Device cuda
+[2022-04-23 12:04:31,313 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-23 12:04:31,316 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-23 12:04:31,346 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-23 12:04:31,348 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-23 12:04:31,738 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-23 12:04:31,763 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-23 12:04:42,771 INFO] ExtSummarizer(
+  (bert): Bert(
+    (model): BertModel(
+      (embeddings): BertEmbeddings(
+        (word_embeddings): Embedding(30522, 768, padding_idx=0)
+        (position_embeddings): Embedding(1024, 768)
+        (token_type_embeddings): Embedding(2, 768)
+        (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1)
+      )
+      (encoder): BertEncoder(
+        (layer): ModuleList(
+          (0): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (1): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (2): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (3): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (4): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (5): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (6): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (7): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (8): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (9): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (10): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+          (11): BertLayer(
+            (attention): BertAttention(
+              (self): BertSelfAttention(
+                (query): Linear(in_features=768, out_features=768, bias=True)
+                (key): Linear(in_features=768, out_features=768, bias=True)
+                (value): Linear(in_features=768, out_features=768, bias=True)
+                (dropout): Dropout(p=0.1)
+              )
+              (output): BertSelfOutput(
+                (dense): Linear(in_features=768, out_features=768, bias=True)
+                (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+                (dropout): Dropout(p=0.1)
+              )
+            )
+            (intermediate): BertIntermediate(
+              (dense): Linear(in_features=768, out_features=3072, bias=True)
+            )
+            (output): BertOutput(
+              (dense): Linear(in_features=3072, out_features=768, bias=True)
+              (LayerNorm): LayerNorm(torch.Size([768]), eps=1e-12, elementwise_affine=True)
+              (dropout): Dropout(p=0.1)
+            )
+          )
+        )
+      )
+      (pooler): BertPooler(
+        (dense): Linear(in_features=768, out_features=768, bias=True)
+        (activation): Tanh()
+      )
+    )
+  )
+  (ext_layer): ExtTransformerEncoder(
+    (pos_emb): PositionalEncoding(
+      (dropout): Dropout(p=0.1)
+    )
+    (transformer_inter): ModuleList(
+      (0): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=768, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=768, bias=True)
+          (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1)
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1)
+      )
+      (1): TransformerEncoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_keys): Linear(in_features=768, out_features=768, bias=True)
+          (linear_values): Linear(in_features=768, out_features=768, bias=True)
+          (linear_query): Linear(in_features=768, out_features=768, bias=True)
+          (softmax): Softmax()
+          (dropout): Dropout(p=0.1)
+          (final_linear): Linear(in_features=768, out_features=768, bias=True)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=768, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=768, bias=True)
+          (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+          (dropout_1): Dropout(p=0.1)
+          (dropout_2): Dropout(p=0.1)
+        )
+        (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+        (dropout): Dropout(p=0.1)
+      )
+    )
+    (dropout): Dropout(p=0.1)
+    (layer_norm): LayerNorm(torch.Size([768]), eps=1e-06, elementwise_affine=True)
+    (wo): Linear(in_features=768, out_features=1, bias=True)
+    (sigmoid): Sigmoid()
+  )
+)
+[2022-04-23 12:04:42,811 INFO] * number of parameters: 120905729
+[2022-04-23 12:04:42,811 INFO] Start training...
+[2022-04-23 12:04:47,925 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[0, 1]
+gpu_rank 1
+gpu_rank 1
+[2022-04-23 12:05:11,151 INFO] Step 50/15000; xent: 3.33; lr: 0.0000001;  69 docs/s;     23 sec
+[0, 1]
+gpu_rank 0
+gpu_rank 0
+[2022-04-23 12:05:33,843 INFO] Step 100/15000; xent: 2.18; lr: 0.0000002;  71 docs/s;     46 sec
+[2022-04-23 12:05:57,602 INFO] Step 150/15000; xent: 1.54; lr: 0.0000003;  67 docs/s;     70 sec
+[2022-04-23 12:06:20,419 INFO] Step 200/15000; xent: 1.36; lr: 0.0000004;  70 docs/s;     92 sec
+[2022-04-23 12:06:43,473 INFO] Step 250/15000; xent: 1.35; lr: 0.0000005;  69 docs/s;    116 sec
+[2022-04-23 12:06:47,558 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:07:11,717 INFO] Step 300/15000; xent: 1.42; lr: 0.0000006;  57 docs/s;    144 sec
+[2022-04-23 12:07:34,546 INFO] Step 350/15000; xent: 1.31; lr: 0.0000007;  70 docs/s;    167 sec
+[2022-04-23 12:07:44,252 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:08:04,289 INFO] Step 400/15000; xent: 1.37; lr: 0.0000008;  54 docs/s;    196 sec
+[2022-04-23 12:08:27,112 INFO] Step 450/15000; xent: 1.39; lr: 0.0000009;  70 docs/s;    219 sec
+[2022-04-23 12:08:50,281 INFO] Step 500/15000; xent: 1.32; lr: 0.0000010;  69 docs/s;    242 sec
+[2022-04-23 12:09:13,190 INFO] Step 550/15000; xent: 1.36; lr: 0.0000011;  70 docs/s;    265 sec
+[2022-04-23 12:09:36,282 INFO] Step 600/15000; xent: 1.31; lr: 0.0000012;  69 docs/s;    288 sec
+[2022-04-23 12:09:47,334 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:10:06,832 INFO] Step 650/15000; xent: 1.36; lr: 0.0000013;  52 docs/s;    319 sec
+[2022-04-23 12:10:29,787 INFO] Step 700/15000; xent: 1.33; lr: 0.0000014;  70 docs/s;    342 sec
+[2022-04-23 12:10:52,918 INFO] Step 750/15000; xent: 1.33; lr: 0.0000015;  69 docs/s;    365 sec
+[2022-04-23 12:11:15,583 INFO] Step 800/15000; xent: 1.43; lr: 0.0000016;  71 docs/s;    388 sec
+[2022-04-23 12:11:38,504 INFO] Step 850/15000; xent: 1.27; lr: 0.0000017;  70 docs/s;    411 sec
+[2022-04-23 12:11:56,721 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 12:12:16,676 INFO] Step 900/15000; xent: 1.36; lr: 0.0000018;  42 docs/s;    449 sec
+[2022-04-23 12:12:39,625 INFO] Step 950/15000; xent: 1.31; lr: 0.0000019;  70 docs/s;    472 sec
+[2022-04-23 12:13:02,997 INFO] Step 1000/15000; xent: 1.28; lr: 0.0000020;  68 docs/s;    495 sec
+[2022-04-23 12:13:03,024 INFO] Saving checkpoint ../models/eLife/model_step_1000.pt
+[2022-04-23 12:13:29,596 INFO] Step 1050/15000; xent: 1.34; lr: 0.0000021;  60 docs/s;    522 sec
+[2022-04-23 12:13:52,670 INFO] Step 1100/15000; xent: 1.33; lr: 0.0000022;  69 docs/s;    545 sec
+[2022-04-23 12:14:00,645 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:14:20,659 INFO] Step 1150/15000; xent: 1.36; lr: 0.0000023;  57 docs/s;    573 sec
+[2022-04-23 12:14:43,356 INFO] Step 1200/15000; xent: 1.31; lr: 0.0000024;  70 docs/s;    595 sec
+[2022-04-23 12:14:56,921 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 12:15:12,617 INFO] Step 1250/15000; xent: 1.28; lr: 0.0000025;  55 docs/s;    625 sec
+[2022-04-23 12:15:35,391 INFO] Step 1300/15000; xent: 1.34; lr: 0.0000026;  70 docs/s;    647 sec
+[2022-04-23 12:15:58,704 INFO] Step 1350/15000; xent: 1.36; lr: 0.0000027;  69 docs/s;    671 sec
+[2022-04-23 12:16:21,458 INFO] Step 1400/15000; xent: 1.25; lr: 0.0000028;  70 docs/s;    694 sec
+[2022-04-23 12:16:44,451 INFO] Step 1450/15000; xent: 1.31; lr: 0.0000029;  70 docs/s;    717 sec
+[2022-04-23 12:16:55,885 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:17:12,276 INFO] Step 1500/15000; xent: 1.29; lr: 0.0000030;  57 docs/s;    744 sec
+[2022-04-23 12:17:35,149 INFO] Step 1550/15000; xent: 1.37; lr: 0.0000031;  70 docs/s;    767 sec
+[2022-04-23 12:17:51,824 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:18:04,472 INFO] Step 1600/15000; xent: 1.26; lr: 0.0000032;  55 docs/s;    797 sec
+[2022-04-23 12:18:26,977 INFO] Step 1650/15000; xent: 1.26; lr: 0.0000033;  71 docs/s;    819 sec
+[2022-04-23 12:18:50,125 INFO] Step 1700/15000; xent: 1.41; lr: 0.0000034;  69 docs/s;    842 sec
+[2022-04-23 12:19:13,022 INFO] Step 1750/15000; xent: 1.32; lr: 0.0000035;  70 docs/s;    865 sec
+[2022-04-23 12:19:36,207 INFO] Step 1800/15000; xent: 1.36; lr: 0.0000036;  69 docs/s;    888 sec
+[2022-04-23 12:19:52,123 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:20:04,088 INFO] Step 1850/15000; xent: 1.25; lr: 0.0000037;  57 docs/s;    916 sec
+[2022-04-23 12:20:26,913 INFO] Step 1900/15000; xent: 1.32; lr: 0.0000038;  70 docs/s;    939 sec
+[2022-04-23 12:20:47,336 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:20:55,961 INFO] Step 1950/15000; xent: 1.37; lr: 0.0000039;  55 docs/s;    968 sec
+[2022-04-23 12:21:18,849 INFO] Step 2000/15000; xent: 1.34; lr: 0.0000040;  70 docs/s;    991 sec
+[2022-04-23 12:21:18,850 INFO] Saving checkpoint ../models/eLife/model_step_2000.pt
+[2022-04-23 12:21:45,815 INFO] Step 2050/15000; xent: 1.27; lr: 0.0000041;  59 docs/s;   1018 sec
+[2022-04-23 12:22:08,683 INFO] Step 2100/15000; xent: 1.30; lr: 0.0000042;  70 docs/s;   1041 sec
+[2022-04-23 12:22:31,635 INFO] Step 2150/15000; xent: 1.36; lr: 0.0000043;  70 docs/s;   1064 sec
+[2022-04-23 12:23:01,299 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 12:23:09,960 INFO] Step 2200/15000; xent: 1.27; lr: 0.0000044;  42 docs/s;   1102 sec
+[2022-04-23 12:23:32,780 INFO] Step 2250/15000; xent: 1.26; lr: 0.0000045;  70 docs/s;   1125 sec
+[2022-04-23 12:23:55,996 INFO] Step 2300/15000; xent: 1.27; lr: 0.0000046;  69 docs/s;   1148 sec
+[2022-04-23 12:24:18,801 INFO] Step 2350/15000; xent: 1.29; lr: 0.0000047;  70 docs/s;   1171 sec
+[2022-04-23 12:24:41,721 INFO] Step 2400/15000; xent: 1.32; lr: 0.0000048;  70 docs/s;   1194 sec
+[2022-04-23 12:25:01,868 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:25:09,822 INFO] Step 2450/15000; xent: 1.35; lr: 0.0000049;  57 docs/s;   1222 sec
+[2022-04-23 12:25:32,658 INFO] Step 2500/15000; xent: 1.32; lr: 0.0000050;  70 docs/s;   1245 sec
+[2022-04-23 12:25:57,076 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:26:01,645 INFO] Step 2550/15000; xent: 1.29; lr: 0.0000051;  55 docs/s;   1274 sec
+[2022-04-23 12:26:24,458 INFO] Step 2600/15000; xent: 1.32; lr: 0.0000052;  70 docs/s;   1297 sec
+[2022-04-23 12:26:47,400 INFO] Step 2650/15000; xent: 1.32; lr: 0.0000053;  70 docs/s;   1319 sec
+[2022-04-23 12:27:11,076 INFO] Step 2700/15000; xent: 1.32; lr: 0.0000054;  68 docs/s;   1343 sec
+[2022-04-23 12:27:33,861 INFO] Step 2750/15000; xent: 1.26; lr: 0.0000055;  70 docs/s;   1366 sec
+[2022-04-23 12:27:59,831 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 12:28:04,786 INFO] Step 2800/15000; xent: 1.28; lr: 0.0000056;  52 docs/s;   1397 sec
+[2022-04-23 12:28:27,600 INFO] Step 2850/15000; xent: 1.27; lr: 0.0000057;  70 docs/s;   1420 sec
+[2022-04-23 12:28:50,421 INFO] Step 2900/15000; xent: 1.29; lr: 0.0000058;  70 docs/s;   1442 sec
+[2022-04-23 12:29:13,591 INFO] Step 2950/15000; xent: 1.30; lr: 0.0000059;  69 docs/s;   1466 sec
+[2022-04-23 12:29:36,431 INFO] Step 3000/15000; xent: 1.26; lr: 0.0000060;  70 docs/s;   1489 sec
+[2022-04-23 12:29:36,473 INFO] Saving checkpoint ../models/eLife/model_step_3000.pt
+[2022-04-23 12:30:04,023 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:30:08,392 INFO] Step 3050/15000; xent: 1.32; lr: 0.0000061;  50 docs/s;   1520 sec
+[2022-04-23 12:30:31,252 INFO] Step 3100/15000; xent: 1.29; lr: 0.0000062;  70 docs/s;   1543 sec
+[2022-04-23 12:30:54,216 INFO] Step 3150/15000; xent: 1.26; lr: 0.0000063;  70 docs/s;   1566 sec
+[2022-04-23 12:30:59,545 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:31:23,115 INFO] Step 3200/15000; xent: 1.29; lr: 0.0000064;  55 docs/s;   1595 sec
+[2022-04-23 12:31:46,032 INFO] Step 3250/15000; xent: 1.24; lr: 0.0000065;  70 docs/s;   1618 sec
+[2022-04-23 12:32:09,293 INFO] Step 3300/15000; xent: 1.27; lr: 0.0000066;  69 docs/s;   1641 sec
+[2022-04-23 12:32:32,208 INFO] Step 3350/15000; xent: 1.35; lr: 0.0000067;  70 docs/s;   1664 sec
+[2022-04-23 12:32:55,365 INFO] Step 3400/15000; xent: 1.24; lr: 0.0000068;  69 docs/s;   1687 sec
+[2022-04-23 12:33:09,528 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 12:33:33,306 INFO] Step 3450/15000; xent: 1.29; lr: 0.0000069;  42 docs/s;   1725 sec
+[2022-04-23 12:33:56,177 INFO] Step 3500/15000; xent: 1.28; lr: 0.0000070;  70 docs/s;   1748 sec
+[2022-04-23 12:34:19,333 INFO] Step 3550/15000; xent: 1.21; lr: 0.0000071;  69 docs/s;   1771 sec
+[2022-04-23 12:34:42,118 INFO] Step 3600/15000; xent: 1.23; lr: 0.0000072;  70 docs/s;   1794 sec
+[2022-04-23 12:35:05,102 INFO] Step 3650/15000; xent: 1.27; lr: 0.0000073;  69 docs/s;   1817 sec
+[2022-04-23 12:35:12,871 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:35:35,822 INFO] Step 3700/15000; xent: 1.28; lr: 0.0000074;  52 docs/s;   1848 sec
+[2022-04-23 12:35:58,635 INFO] Step 3750/15000; xent: 1.27; lr: 0.0000075;  70 docs/s;   1871 sec
+[2022-04-23 12:36:21,957 INFO] Step 3800/15000; xent: 1.28; lr: 0.0000076;  69 docs/s;   1894 sec
+[2022-04-23 12:36:44,966 INFO] Step 3850/15000; xent: 1.21; lr: 0.0000077;  70 docs/s;   1917 sec
+[2022-04-23 12:37:07,941 INFO] Step 3900/15000; xent: 1.25; lr: 0.0000078;  69 docs/s;   1940 sec
+[2022-04-23 12:37:12,084 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:37:35,895 INFO] Step 3950/15000; xent: 1.29; lr: 0.0000079;  57 docs/s;   1968 sec
+[2022-04-23 12:37:58,619 INFO] Step 4000/15000; xent: 1.22; lr: 0.0000080;  70 docs/s;   1991 sec
+[2022-04-23 12:37:58,620 INFO] Saving checkpoint ../models/eLife/model_step_4000.pt
+[2022-04-23 12:38:12,160 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 12:38:31,609 INFO] Step 4050/15000; xent: 1.21; lr: 0.0000081;  49 docs/s;   2024 sec
+[2022-04-23 12:38:54,585 INFO] Step 4100/15000; xent: 1.24; lr: 0.0000082;  70 docs/s;   2047 sec
+[2022-04-23 12:39:17,785 INFO] Step 4150/15000; xent: 1.31; lr: 0.0000083;  69 docs/s;   2070 sec
+[2022-04-23 12:39:40,712 INFO] Step 4200/15000; xent: 1.19; lr: 0.0000084;  70 docs/s;   2093 sec
+[2022-04-23 12:40:03,851 INFO] Step 4250/15000; xent: 1.24; lr: 0.0000085;  69 docs/s;   2116 sec
+[2022-04-23 12:40:15,233 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:40:34,414 INFO] Step 4300/15000; xent: 1.17; lr: 0.0000086;  52 docs/s;   2146 sec
+[2022-04-23 12:40:57,138 INFO] Step 4350/15000; xent: 1.18; lr: 0.0000087;  70 docs/s;   2169 sec
+[2022-04-23 12:41:20,381 INFO] Step 4400/15000; xent: 1.20; lr: 0.0000088;  69 docs/s;   2192 sec
+[2022-04-23 12:41:43,174 INFO] Step 4450/15000; xent: 1.27; lr: 0.0000089;  70 docs/s;   2215 sec
+[2022-04-23 12:42:06,217 INFO] Step 4500/15000; xent: 1.23; lr: 0.0000090;  69 docs/s;   2238 sec
+[2022-04-23 12:42:24,778 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 12:42:44,518 INFO] Step 4550/15000; xent: 1.21; lr: 0.0000091;  42 docs/s;   2277 sec
+[2022-04-23 12:43:07,355 INFO] Step 4600/15000; xent: 1.26; lr: 0.0000092;  70 docs/s;   2299 sec
+[2022-04-23 12:43:30,589 INFO] Step 4650/15000; xent: 1.18; lr: 0.0000093;  69 docs/s;   2323 sec
+[2022-04-23 12:43:53,120 INFO] Step 4700/15000; xent: 1.13; lr: 0.0000094;  71 docs/s;   2345 sec
+[2022-04-23 12:44:16,048 INFO] Step 4750/15000; xent: 1.11; lr: 0.0000095;  70 docs/s;   2368 sec
+[2022-04-23 12:44:24,336 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:44:44,010 INFO] Step 4800/15000; xent: 1.23; lr: 0.0000096;  57 docs/s;   2396 sec
+[2022-04-23 12:45:06,806 INFO] Step 4850/15000; xent: 1.16; lr: 0.0000097;  70 docs/s;   2419 sec
+[2022-04-23 12:45:20,821 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 12:45:35,842 INFO] Step 4900/15000; xent: 1.17; lr: 0.0000098;  55 docs/s;   2448 sec
+[2022-04-23 12:45:58,774 INFO] Step 4950/15000; xent: 1.10; lr: 0.0000099;  70 docs/s;   2471 sec
+[2022-04-23 12:46:22,296 INFO] Step 5000/15000; xent: 1.09; lr: 0.0000100;  68 docs/s;   2494 sec
+[2022-04-23 12:46:22,337 INFO] Saving checkpoint ../models/eLife/model_step_5000.pt
+[2022-04-23 12:46:48,985 INFO] Step 5050/15000; xent: 1.08; lr: 0.0000101;  60 docs/s;   2521 sec
+[2022-04-23 12:47:12,072 INFO] Step 5100/15000; xent: 1.09; lr: 0.0000102;  69 docs/s;   2544 sec
+[2022-04-23 12:47:23,928 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:47:39,860 INFO] Step 5150/15000; xent: 1.12; lr: 0.0000103;  58 docs/s;   2572 sec
+[2022-04-23 12:48:02,545 INFO] Step 5200/15000; xent: 1.12; lr: 0.0000104;  71 docs/s;   2595 sec
+[2022-04-23 12:48:19,819 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:48:31,849 INFO] Step 5250/15000; xent: 1.09; lr: 0.0000105;  55 docs/s;   2624 sec
+[2022-04-23 12:48:54,600 INFO] Step 5300/15000; xent: 1.15; lr: 0.0000106;  70 docs/s;   2647 sec
+[2022-04-23 12:49:17,511 INFO] Step 5350/15000; xent: 1.10; lr: 0.0000107;  70 docs/s;   2670 sec
+[2022-04-23 12:49:40,301 INFO] Step 5400/15000; xent: 1.14; lr: 0.0000108;  70 docs/s;   2692 sec
+[2022-04-23 12:50:03,204 INFO] Step 5450/15000; xent: 1.10; lr: 0.0000109;  70 docs/s;   2715 sec
+[2022-04-23 12:50:22,133 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:50:33,595 INFO] Step 5500/15000; xent: 1.08; lr: 0.0000110;  53 docs/s;   2746 sec
+[2022-04-23 12:50:56,383 INFO] Step 5550/15000; xent: 0.96; lr: 0.0000111;  70 docs/s;   2768 sec
+[2022-04-23 12:51:19,310 INFO] Step 5600/15000; xent: 1.03; lr: 0.0000112;  70 docs/s;   2791 sec
+[2022-04-23 12:51:42,086 INFO] Step 5650/15000; xent: 1.05; lr: 0.0000113;  70 docs/s;   2814 sec
+[2022-04-23 12:52:05,030 INFO] Step 5700/15000; xent: 1.01; lr: 0.0000114;  70 docs/s;   2837 sec
+[2022-04-23 12:52:31,073 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 12:52:42,932 INFO] Step 5750/15000; xent: 0.99; lr: 0.0000115;  42 docs/s;   2875 sec
+[2022-04-23 12:53:05,758 INFO] Step 5800/15000; xent: 1.00; lr: 0.0000116;  70 docs/s;   2898 sec
+[2022-04-23 12:53:29,065 INFO] Step 5850/15000; xent: 0.95; lr: 0.0000117;  69 docs/s;   2921 sec
+[2022-04-23 12:53:51,971 INFO] Step 5900/15000; xent: 1.02; lr: 0.0000118;  70 docs/s;   2944 sec
+[2022-04-23 12:54:15,060 INFO] Step 5950/15000; xent: 0.96; lr: 0.0000119;  69 docs/s;   2967 sec
+[2022-04-23 12:54:31,150 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:54:43,097 INFO] Step 6000/15000; xent: 0.97; lr: 0.0000120;  57 docs/s;   2995 sec
+[2022-04-23 12:54:43,098 INFO] Saving checkpoint ../models/eLife/model_step_6000.pt
+[2022-04-23 12:55:09,380 INFO] Step 6050/15000; xent: 0.99; lr: 0.0000121;  61 docs/s;   3021 sec
+[2022-04-23 12:55:30,934 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 12:55:38,484 INFO] Step 6100/15000; xent: 0.95; lr: 0.0000122;  55 docs/s;   3051 sec
+[2022-04-23 12:56:01,154 INFO] Step 6150/15000; xent: 0.92; lr: 0.0000123;  71 docs/s;   3073 sec
+[2022-04-23 12:56:24,475 INFO] Step 6200/15000; xent: 0.91; lr: 0.0000124;  69 docs/s;   3097 sec
+[2022-04-23 12:56:47,189 INFO] Step 6250/15000; xent: 0.86; lr: 0.0000125;  70 docs/s;   3119 sec
+[2022-04-23 12:57:10,087 INFO] Step 6300/15000; xent: 0.93; lr: 0.0000126;  70 docs/s;   3142 sec
+[2022-04-23 12:57:32,386 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 12:57:40,453 INFO] Step 6350/15000; xent: 0.81; lr: 0.0000127;  53 docs/s;   3173 sec
+[2022-04-23 12:58:03,233 INFO] Step 6400/15000; xent: 0.86; lr: 0.0000128;  70 docs/s;   3195 sec
+[2022-04-23 12:58:26,425 INFO] Step 6450/15000; xent: 0.82; lr: 0.0000129;  69 docs/s;   3218 sec
+[2022-04-23 12:58:49,356 INFO] Step 6500/15000; xent: 0.79; lr: 0.0000130;  70 docs/s;   3241 sec
+[2022-04-23 12:59:12,240 INFO] Step 6550/15000; xent: 0.86; lr: 0.0000131;  70 docs/s;   3264 sec
+[2022-04-23 12:59:32,234 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 12:59:40,539 INFO] Step 6600/15000; xent: 0.90; lr: 0.0000132;  56 docs/s;   3293 sec
+[2022-04-23 13:00:03,320 INFO] Step 6650/15000; xent: 0.84; lr: 0.0000133;  70 docs/s;   3315 sec
+[2022-04-23 13:00:28,326 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:00:32,338 INFO] Step 6700/15000; xent: 0.77; lr: 0.0000134;  55 docs/s;   3344 sec
+[2022-04-23 13:00:54,988 INFO] Step 6750/15000; xent: 0.79; lr: 0.0000135;  71 docs/s;   3367 sec
+[2022-04-23 13:01:17,884 INFO] Step 6800/15000; xent: 0.70; lr: 0.0000136;  70 docs/s;   3390 sec
+[2022-04-23 13:01:40,947 INFO] Step 6850/15000; xent: 0.75; lr: 0.0000137;  69 docs/s;   3413 sec
+[2022-04-23 13:02:03,769 INFO] Step 6900/15000; xent: 0.76; lr: 0.0000138;  70 docs/s;   3436 sec
+[2022-04-23 13:02:32,189 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:02:36,194 INFO] Step 6950/15000; xent: 0.75; lr: 0.0000139;  49 docs/s;   3468 sec
+[2022-04-23 13:02:58,855 INFO] Step 7000/15000; xent: 0.70; lr: 0.0000140;  71 docs/s;   3491 sec
+[2022-04-23 13:02:58,856 INFO] Saving checkpoint ../models/eLife/model_step_7000.pt
+[2022-04-23 13:03:25,561 INFO] Step 7050/15000; xent: 0.69; lr: 0.0000141;  60 docs/s;   3518 sec
+[2022-04-23 13:03:38,202 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:04:00,787 INFO] Step 7100/15000; xent: 0.75; lr: 0.0000142;  45 docs/s;   3553 sec
+[2022-04-23 13:04:23,591 INFO] Step 7150/15000; xent: 0.73; lr: 0.0000143;  70 docs/s;   3576 sec
+[2022-04-23 13:04:46,505 INFO] Step 7200/15000; xent: 0.74; lr: 0.0000144;  70 docs/s;   3599 sec
+[2022-04-23 13:05:09,293 INFO] Step 7250/15000; xent: 0.67; lr: 0.0000145;  70 docs/s;   3621 sec
+[2022-04-23 13:05:32,195 INFO] Step 7300/15000; xent: 0.71; lr: 0.0000146;  70 docs/s;   3644 sec
+[2022-04-23 13:05:40,061 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:06:02,384 INFO] Step 7350/15000; xent: 0.70; lr: 0.0000147;  53 docs/s;   3674 sec
+[2022-04-23 13:06:25,054 INFO] Step 7400/15000; xent: 0.61; lr: 0.0000148;  71 docs/s;   3697 sec
+[2022-04-23 13:06:48,517 INFO] Step 7450/15000; xent: 0.61; lr: 0.0000149;  68 docs/s;   3721 sec
+[2022-04-23 13:07:11,277 INFO] Step 7500/15000; xent: 0.63; lr: 0.0000150;  70 docs/s;   3743 sec
+[2022-04-23 13:07:34,094 INFO] Step 7550/15000; xent: 0.64; lr: 0.0000151;  70 docs/s;   3766 sec
+[2022-04-23 13:07:41,216 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:08:04,575 INFO] Step 7600/15000; xent: 0.62; lr: 0.0000152;  52 docs/s;   3797 sec
+[2022-04-23 13:08:27,475 INFO] Step 7650/15000; xent: 0.59; lr: 0.0000153;  70 docs/s;   3820 sec
+[2022-04-23 13:08:50,654 INFO] Step 7700/15000; xent: 0.62; lr: 0.0000154;  69 docs/s;   3843 sec
+[2022-04-23 13:09:13,569 INFO] Step 7750/15000; xent: 0.63; lr: 0.0000155;  70 docs/s;   3866 sec
+[2022-04-23 13:09:36,676 INFO] Step 7800/15000; xent: 0.61; lr: 0.0000156;  69 docs/s;   3889 sec
+[2022-04-23 13:09:41,126 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:10:04,607 INFO] Step 7850/15000; xent: 0.56; lr: 0.0000157;  57 docs/s;   3917 sec
+[2022-04-23 13:10:27,379 INFO] Step 7900/15000; xent: 0.60; lr: 0.0000158;  70 docs/s;   3939 sec
+[2022-04-23 13:10:37,530 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:10:56,241 INFO] Step 7950/15000; xent: 0.58; lr: 0.0000159;  55 docs/s;   3968 sec
+[2022-04-23 13:11:19,045 INFO] Step 8000/15000; xent: 0.47; lr: 0.0000160;  70 docs/s;   3991 sec
+[2022-04-23 13:11:19,046 INFO] Saving checkpoint ../models/eLife/model_step_8000.pt
+[2022-04-23 13:11:46,513 INFO] Step 8050/15000; xent: 0.53; lr: 0.0000161;  58 docs/s;   4019 sec
+[2022-04-23 13:12:09,223 INFO] Step 8100/15000; xent: 0.49; lr: 0.0000162;  70 docs/s;   4041 sec
+[2022-04-23 13:12:32,098 INFO] Step 8150/15000; xent: 0.54; lr: 0.0000163;  70 docs/s;   4064 sec
+[2022-04-23 13:12:50,750 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:13:09,847 INFO] Step 8200/15000; xent: 0.54; lr: 0.0000164;  42 docs/s;   4102 sec
+[2022-04-23 13:13:32,694 INFO] Step 8250/15000; xent: 0.55; lr: 0.0000165;  70 docs/s;   4125 sec
+[2022-04-23 13:13:55,813 INFO] Step 8300/15000; xent: 0.59; lr: 0.0000166;  69 docs/s;   4148 sec
+[2022-04-23 13:14:18,601 INFO] Step 8350/15000; xent: 0.55; lr: 0.0000167;  70 docs/s;   4171 sec
+[2022-04-23 13:14:41,637 INFO] Step 8400/15000; xent: 0.59; lr: 0.0000168;  69 docs/s;   4194 sec
+[2022-04-23 13:14:50,113 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:15:09,361 INFO] Step 8450/15000; xent: 0.51; lr: 0.0000169;  58 docs/s;   4221 sec
+[2022-04-23 13:15:32,043 INFO] Step 8500/15000; xent: 0.52; lr: 0.0000170;  71 docs/s;   4244 sec
+[2022-04-23 13:15:46,222 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:16:01,125 INFO] Step 8550/15000; xent: 0.50; lr: 0.0000171;  55 docs/s;   4273 sec
+[2022-04-23 13:16:24,032 INFO] Step 8600/15000; xent: 0.45; lr: 0.0000172;  70 docs/s;   4296 sec
+[2022-04-23 13:16:47,357 INFO] Step 8650/15000; xent: 0.48; lr: 0.0000173;  69 docs/s;   4319 sec
+[2022-04-23 13:17:10,066 INFO] Step 8700/15000; xent: 0.47; lr: 0.0000174;  70 docs/s;   4342 sec
+[2022-04-23 13:17:33,034 INFO] Step 8750/15000; xent: 0.50; lr: 0.0000175;  70 docs/s;   4365 sec
+[2022-04-23 13:17:45,073 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:18:00,488 INFO] Step 8800/15000; xent: 0.47; lr: 0.0000176;  58 docs/s;   4393 sec
+[2022-04-23 13:18:23,356 INFO] Step 8850/15000; xent: 0.46; lr: 0.0000177;  70 docs/s;   4415 sec
+[2022-04-23 13:18:41,059 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:18:52,394 INFO] Step 8900/15000; xent: 0.52; lr: 0.0000178;  55 docs/s;   4444 sec
+[2022-04-23 13:19:15,123 INFO] Step 8950/15000; xent: 0.48; lr: 0.0000179;  70 docs/s;   4467 sec
+[2022-04-23 13:19:38,134 INFO] Step 9000/15000; xent: 0.48; lr: 0.0000180;  70 docs/s;   4490 sec
+[2022-04-23 13:19:38,175 INFO] Saving checkpoint ../models/eLife/model_step_9000.pt
+[2022-04-23 13:20:04,645 INFO] Step 9050/15000; xent: 0.49; lr: 0.0000181;  60 docs/s;   4517 sec
+[2022-04-23 13:20:27,611 INFO] Step 9100/15000; xent: 0.47; lr: 0.0000182;  70 docs/s;   4540 sec
+[2022-04-23 13:20:46,713 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:20:57,846 INFO] Step 9150/15000; xent: 0.47; lr: 0.0000183;  53 docs/s;   4570 sec
+[2022-04-23 13:21:20,478 INFO] Step 9200/15000; xent: 0.46; lr: 0.0000184;  71 docs/s;   4593 sec
+[2022-04-23 13:21:43,525 INFO] Step 9250/15000; xent: 0.49; lr: 0.0000185;  69 docs/s;   4616 sec
+[2022-04-23 13:22:06,282 INFO] Step 9300/15000; xent: 0.40; lr: 0.0000186;  70 docs/s;   4638 sec
+[2022-04-23 13:22:29,270 INFO] Step 9350/15000; xent: 0.43; lr: 0.0000187;  70 docs/s;   4661 sec
+[2022-04-23 13:22:50,115 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:23:01,573 INFO] Step 9400/15000; xent: 0.43; lr: 0.0000188;  49 docs/s;   4694 sec
+[2022-04-23 13:23:24,158 INFO] Step 9450/15000; xent: 0.39; lr: 0.0000189;  71 docs/s;   4716 sec
+[2022-04-23 13:23:51,959 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:23:59,084 INFO] Step 9500/15000; xent: 0.44; lr: 0.0000190;  46 docs/s;   4751 sec
+[2022-04-23 13:24:21,888 INFO] Step 9550/15000; xent: 0.50; lr: 0.0000191;  70 docs/s;   4774 sec
+[2022-04-23 13:24:44,971 INFO] Step 9600/15000; xent: 0.45; lr: 0.0000192;  69 docs/s;   4797 sec
+[2022-04-23 13:25:07,702 INFO] Step 9650/15000; xent: 0.46; lr: 0.0000193;  70 docs/s;   4820 sec
+[2022-04-23 13:25:30,394 INFO] Step 9700/15000; xent: 0.43; lr: 0.0000194;  71 docs/s;   4842 sec
+[2022-04-23 13:25:54,070 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:26:00,982 INFO] Step 9750/15000; xent: 0.42; lr: 0.0000195;  52 docs/s;   4873 sec
+[2022-04-23 13:26:23,747 INFO] Step 9800/15000; xent: 0.36; lr: 0.0000196;  70 docs/s;   4896 sec
+[2022-04-23 13:26:46,941 INFO] Step 9850/15000; xent: 0.38; lr: 0.0000197;  69 docs/s;   4919 sec
+[2022-04-23 13:27:09,802 INFO] Step 9900/15000; xent: 0.42; lr: 0.0000198;  70 docs/s;   4942 sec
+[2022-04-23 13:27:32,503 INFO] Step 9950/15000; xent: 0.36; lr: 0.0000199;  70 docs/s;   4965 sec
+[2022-04-23 13:27:52,545 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:28:00,344 INFO] Step 10000/15000; xent: 0.37; lr: 0.0000200;  57 docs/s;   4992 sec
+[2022-04-23 13:28:00,346 INFO] Saving checkpoint ../models/eLife/model_step_10000.pt
+[2022-04-23 13:28:26,682 INFO] Step 10050/15000; xent: 0.40; lr: 0.0000200;  61 docs/s;   5019 sec
+[2022-04-23 13:28:52,092 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:28:55,620 INFO] Step 10100/15000; xent: 0.40; lr: 0.0000199;  55 docs/s;   5048 sec
+[2022-04-23 13:29:18,195 INFO] Step 10150/15000; xent: 0.41; lr: 0.0000199;  71 docs/s;   5070 sec
+[2022-04-23 13:29:40,985 INFO] Step 10200/15000; xent: 0.43; lr: 0.0000198;  70 docs/s;   5093 sec
+[2022-04-23 13:30:03,952 INFO] Step 10250/15000; xent: 0.43; lr: 0.0000198;  70 docs/s;   5116 sec
+[2022-04-23 13:30:26,648 INFO] Step 10300/15000; xent: 0.42; lr: 0.0000197;  70 docs/s;   5139 sec
+[2022-04-23 13:30:53,869 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:30:57,112 INFO] Step 10350/15000; xent: 0.41; lr: 0.0000197;  52 docs/s;   5169 sec
+[2022-04-23 13:31:19,792 INFO] Step 10400/15000; xent: 0.38; lr: 0.0000196;  71 docs/s;   5192 sec
+[2022-04-23 13:31:42,389 INFO] Step 10450/15000; xent: 0.36; lr: 0.0000196;  71 docs/s;   5214 sec
+[2022-04-23 13:32:05,545 INFO] Step 10500/15000; xent: 0.39; lr: 0.0000195;  69 docs/s;   5238 sec
+[2022-04-23 13:32:28,183 INFO] Step 10550/15000; xent: 0.37; lr: 0.0000195;  71 docs/s;   5260 sec
+[2022-04-23 13:32:57,017 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:33:00,600 INFO] Step 10600/15000; xent: 0.35; lr: 0.0000194;  49 docs/s;   5293 sec
+[2022-04-23 13:33:23,332 INFO] Step 10650/15000; xent: 0.35; lr: 0.0000194;  70 docs/s;   5315 sec
+[2022-04-23 13:33:46,146 INFO] Step 10700/15000; xent: 0.36; lr: 0.0000193;  70 docs/s;   5338 sec
+[2022-04-23 13:33:58,645 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:34:20,592 INFO] Step 10750/15000; xent: 0.37; lr: 0.0000193;  46 docs/s;   5373 sec
+[2022-04-23 13:34:43,336 INFO] Step 10800/15000; xent: 0.39; lr: 0.0000192;  70 docs/s;   5395 sec
+[2022-04-23 13:35:06,349 INFO] Step 10850/15000; xent: 0.36; lr: 0.0000192;  70 docs/s;   5418 sec
+[2022-04-23 13:35:29,062 INFO] Step 10900/15000; xent: 0.37; lr: 0.0000192;  70 docs/s;   5441 sec
+[2022-04-23 13:35:51,883 INFO] Step 10950/15000; xent: 0.36; lr: 0.0000191;  70 docs/s;   5464 sec
+[2022-04-23 13:36:00,226 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:36:22,178 INFO] Step 11000/15000; xent: 0.34; lr: 0.0000191;  53 docs/s;   5494 sec
+[2022-04-23 13:36:22,179 INFO] Saving checkpoint ../models/eLife/model_step_11000.pt
+[2022-04-23 13:36:48,641 INFO] Step 11050/15000; xent: 0.35; lr: 0.0000190;  60 docs/s;   5521 sec
+[2022-04-23 13:37:12,020 INFO] Step 11100/15000; xent: 0.32; lr: 0.0000190;  68 docs/s;   5544 sec
+[2022-04-23 13:37:34,772 INFO] Step 11150/15000; xent: 0.29; lr: 0.0000189;  70 docs/s;   5567 sec
+[2022-04-23 13:37:57,708 INFO] Step 11200/15000; xent: 0.30; lr: 0.0000189;  70 docs/s;   5590 sec
+[2022-04-23 13:38:02,711 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:38:25,389 INFO] Step 11250/15000; xent: 0.31; lr: 0.0000189;  58 docs/s;   5617 sec
+[2022-04-23 13:38:48,163 INFO] Step 11300/15000; xent: 0.30; lr: 0.0000188;  70 docs/s;   5640 sec
+[2022-04-23 13:38:58,493 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:39:17,122 INFO] Step 11350/15000; xent: 0.37; lr: 0.0000188;  55 docs/s;   5669 sec
+[2022-04-23 13:39:39,997 INFO] Step 11400/15000; xent: 0.34; lr: 0.0000187;  70 docs/s;   5692 sec
+[2022-04-23 13:40:03,112 INFO] Step 11450/15000; xent: 0.32; lr: 0.0000187;  69 docs/s;   5715 sec
+[2022-04-23 13:40:25,847 INFO] Step 11500/15000; xent: 0.31; lr: 0.0000187;  70 docs/s;   5738 sec
+[2022-04-23 13:40:48,778 INFO] Step 11550/15000; xent: 0.29; lr: 0.0000186;  70 docs/s;   5761 sec
+[2022-04-23 13:41:00,918 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:41:19,166 INFO] Step 11600/15000; xent: 0.29; lr: 0.0000186;  53 docs/s;   5791 sec
+[2022-04-23 13:41:41,915 INFO] Step 11650/15000; xent: 0.29; lr: 0.0000185;  70 docs/s;   5814 sec
+[2022-04-23 13:42:05,020 INFO] Step 11700/15000; xent: 0.27; lr: 0.0000185;  69 docs/s;   5837 sec
+[2022-04-23 13:42:27,857 INFO] Step 11750/15000; xent: 0.29; lr: 0.0000185;  70 docs/s;   5860 sec
+[2022-04-23 13:42:50,745 INFO] Step 11800/15000; xent: 0.27; lr: 0.0000184;  70 docs/s;   5883 sec
+[2022-04-23 13:43:04,555 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:43:23,138 INFO] Step 11850/15000; xent: 0.28; lr: 0.0000184;  49 docs/s;   5915 sec
+[2022-04-23 13:43:45,819 INFO] Step 11900/15000; xent: 0.29; lr: 0.0000183;  71 docs/s;   5938 sec
+[2022-04-23 13:44:06,203 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:44:20,659 INFO] Step 11950/15000; xent: 0.28; lr: 0.0000183;  46 docs/s;   5973 sec
+[2022-04-23 13:44:43,369 INFO] Step 12000/15000; xent: 0.29; lr: 0.0000183;  70 docs/s;   5995 sec
+[2022-04-23 13:44:43,370 INFO] Saving checkpoint ../models/eLife/model_step_12000.pt
+[2022-04-23 13:45:10,076 INFO] Step 12050/15000; xent: 0.34; lr: 0.0000182;  60 docs/s;   6022 sec
+[2022-04-23 13:45:32,660 INFO] Step 12100/15000; xent: 0.34; lr: 0.0000182;  71 docs/s;   6045 sec
+[2022-04-23 13:45:55,473 INFO] Step 12150/15000; xent: 0.27; lr: 0.0000181;  70 docs/s;   6068 sec
+[2022-04-23 13:46:11,587 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:46:25,812 INFO] Step 12200/15000; xent: 0.28; lr: 0.0000181;  53 docs/s;   6098 sec
+[2022-04-23 13:46:48,479 INFO] Step 12250/15000; xent: 0.25; lr: 0.0000181;  71 docs/s;   6121 sec
+[2022-04-23 13:47:11,593 INFO] Step 12300/15000; xent: 0.24; lr: 0.0000180;  69 docs/s;   6144 sec
+[2022-04-23 13:47:34,226 INFO] Step 12350/15000; xent: 0.25; lr: 0.0000180;  71 docs/s;   6166 sec
+[2022-04-23 13:47:57,172 INFO] Step 12400/15000; xent: 0.25; lr: 0.0000180;  70 docs/s;   6189 sec
+[2022-04-23 13:48:12,773 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:48:27,773 INFO] Step 12450/15000; xent: 0.27; lr: 0.0000179;  52 docs/s;   6220 sec
+[2022-04-23 13:48:50,696 INFO] Step 12500/15000; xent: 0.27; lr: 0.0000179;  70 docs/s;   6243 sec
+[2022-04-23 13:49:13,637 INFO] Step 12550/15000; xent: 0.28; lr: 0.0000179;  70 docs/s;   6266 sec
+[2022-04-23 13:49:36,456 INFO] Step 12600/15000; xent: 0.24; lr: 0.0000178;  70 docs/s;   6289 sec
+[2022-04-23 13:49:59,574 INFO] Step 12650/15000; xent: 0.24; lr: 0.0000178;  69 docs/s;   6312 sec
+[2022-04-23 13:50:12,266 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:50:27,145 INFO] Step 12700/15000; xent: 0.23; lr: 0.0000177;  58 docs/s;   6339 sec
+[2022-04-23 13:50:49,801 INFO] Step 12750/15000; xent: 0.24; lr: 0.0000177;  71 docs/s;   6362 sec
+[2022-04-23 13:51:05,313 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:51:15,907 INFO] Step 12800/15000; xent: 0.25; lr: 0.0000177;  61 docs/s;   6388 sec
+[2022-04-23 13:51:38,710 INFO] Step 12850/15000; xent: 0.17; lr: 0.0000176;  70 docs/s;   6411 sec
+[2022-04-23 13:52:00,496 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:52:07,711 INFO] Step 12900/15000; xent: 0.21; lr: 0.0000176;  55 docs/s;   6440 sec
+[2022-04-23 13:52:30,475 INFO] Step 12950/15000; xent: 0.27; lr: 0.0000176;  70 docs/s;   6463 sec
+[2022-04-23 13:52:53,418 INFO] Step 13000/15000; xent: 0.22; lr: 0.0000175;  70 docs/s;   6485 sec
+[2022-04-23 13:52:53,457 INFO] Saving checkpoint ../models/eLife/model_step_13000.pt
+[2022-04-23 13:53:19,803 INFO] Step 13050/15000; xent: 0.20; lr: 0.0000175;  61 docs/s;   6512 sec
+[2022-04-23 13:53:42,563 INFO] Step 13100/15000; xent: 0.25; lr: 0.0000175;  70 docs/s;   6535 sec
+[2022-04-23 13:54:13,024 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:54:20,307 INFO] Step 13150/15000; xent: 0.25; lr: 0.0000174;  42 docs/s;   6572 sec
+[2022-04-23 13:54:43,033 INFO] Step 13200/15000; xent: 0.29; lr: 0.0000174;  70 docs/s;   6595 sec
+[2022-04-23 13:55:06,190 INFO] Step 13250/15000; xent: 0.19; lr: 0.0000174;  69 docs/s;   6618 sec
+[2022-04-23 13:55:29,137 INFO] Step 13300/15000; xent: 0.22; lr: 0.0000173;  70 docs/s;   6641 sec
+[2022-04-23 13:55:51,791 INFO] Step 13350/15000; xent: 0.20; lr: 0.0000173;  71 docs/s;   6664 sec
+[2022-04-23 13:56:13,115 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 13:56:19,637 INFO] Step 13400/15000; xent: 0.21; lr: 0.0000173;  57 docs/s;   6692 sec
+[2022-04-23 13:56:42,411 INFO] Step 13450/15000; xent: 0.20; lr: 0.0000172;  70 docs/s;   6714 sec
+[2022-04-23 13:57:08,206 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 13:57:11,406 INFO] Step 13500/15000; xent: 0.18; lr: 0.0000172;  55 docs/s;   6743 sec
+[2022-04-23 13:57:34,111 INFO] Step 13550/15000; xent: 0.19; lr: 0.0000172;  70 docs/s;   6766 sec
+[2022-04-23 13:57:56,733 INFO] Step 13600/15000; xent: 0.19; lr: 0.0000171;  71 docs/s;   6789 sec
+[2022-04-23 13:58:19,986 INFO] Step 13650/15000; xent: 0.19; lr: 0.0000171;  69 docs/s;   6812 sec
+[2022-04-23 13:58:42,691 INFO] Step 13700/15000; xent: 0.21; lr: 0.0000171;  70 docs/s;   6835 sec
+[2022-04-23 13:59:09,675 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 13:59:13,266 INFO] Step 13750/15000; xent: 0.21; lr: 0.0000171;  52 docs/s;   6865 sec
+[2022-04-23 13:59:35,983 INFO] Step 13800/15000; xent: 0.17; lr: 0.0000170;  70 docs/s;   6888 sec
+[2022-04-23 13:59:58,778 INFO] Step 13850/15000; xent: 0.19; lr: 0.0000170;  70 docs/s;   6911 sec
+[2022-04-23 14:00:21,837 INFO] Step 13900/15000; xent: 0.19; lr: 0.0000170;  69 docs/s;   6934 sec
+[2022-04-23 14:00:44,647 INFO] Step 13950/15000; xent: 0.23; lr: 0.0000169;  70 docs/s;   6957 sec
+[2022-04-23 14:01:09,694 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.2.bert.pt, number of examples: 864
+[2022-04-23 14:01:12,465 INFO] Step 14000/15000; xent: 0.19; lr: 0.0000169;  57 docs/s;   6985 sec
+[2022-04-23 14:01:12,467 INFO] Saving checkpoint ../models/eLife/model_step_14000.pt
+[2022-04-23 14:01:38,823 INFO] Step 14050/15000; xent: 0.16; lr: 0.0000169;  61 docs/s;   7011 sec
+[2022-04-23 14:02:01,385 INFO] Step 14100/15000; xent: 0.16; lr: 0.0000168;  71 docs/s;   7033 sec
+[2022-04-23 14:02:08,024 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 14:02:30,152 INFO] Step 14150/15000; xent: 0.18; lr: 0.0000168;  56 docs/s;   7062 sec
+[2022-04-23 14:02:52,835 INFO] Step 14200/15000; xent: 0.15; lr: 0.0000168;  71 docs/s;   7085 sec
+[2022-04-23 14:03:15,918 INFO] Step 14250/15000; xent: 0.14; lr: 0.0000168;  69 docs/s;   7108 sec
+[2022-04-23 14:03:38,492 INFO] Step 14300/15000; xent: 0.14; lr: 0.0000167;  71 docs/s;   7131 sec
+[2022-04-23 14:04:01,205 INFO] Step 14350/15000; xent: 0.18; lr: 0.0000167;  70 docs/s;   7153 sec
+[2022-04-23 14:04:16,500 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 14:04:38,493 INFO] Step 14400/15000; xent: 0.18; lr: 0.0000167;  43 docs/s;   7191 sec
+[2022-04-23 14:05:01,183 INFO] Step 14450/15000; xent: 0.18; lr: 0.0000166;  71 docs/s;   7213 sec
+[2022-04-23 14:05:24,181 INFO] Step 14500/15000; xent: 0.17; lr: 0.0000166;  70 docs/s;   7236 sec
+[2022-04-23 14:05:46,947 INFO] Step 14550/15000; xent: 0.18; lr: 0.0000166;  70 docs/s;   7259 sec
+[2022-04-23 14:06:09,665 INFO] Step 14600/15000; xent: 0.19; lr: 0.0000166;  70 docs/s;   7282 sec
+[2022-04-23 14:06:18,252 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.0.bert.pt, number of examples: 2001
+[2022-04-23 14:06:39,754 INFO] Step 14650/15000; xent: 0.15; lr: 0.0000165;  53 docs/s;   7312 sec
+[2022-04-23 14:07:02,436 INFO] Step 14700/15000; xent: 0.15; lr: 0.0000165;  71 docs/s;   7335 sec
+[2022-04-23 14:07:25,674 INFO] Step 14750/15000; xent: 0.12; lr: 0.0000165;  69 docs/s;   7358 sec
+[2022-04-23 14:07:48,318 INFO] Step 14800/15000; xent: 0.13; lr: 0.0000164;  71 docs/s;   7380 sec
+[2022-04-23 14:08:11,288 INFO] Step 14850/15000; xent: 0.17; lr: 0.0000164;  69 docs/s;   7403 sec
+[2022-04-23 14:08:19,097 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001
+[2022-04-23 14:08:41,408 INFO] Step 14900/15000; xent: 0.15; lr: 0.0000164;  53 docs/s;   7433 sec
+[2022-04-23 14:09:04,157 INFO] Step 14950/15000; xent: 0.16; lr: 0.0000164;  70 docs/s;   7456 sec
+[2022-04-23 14:09:27,282 INFO] Step 15000/15000; xent: 0.15; lr: 0.0000163;  69 docs/s;   7479 sec
+[2022-04-23 14:09:27,313 INFO] Saving checkpoint ../models/eLife/model_step_15000.pt
+[2022-04-23 14:09:34,590 INFO] Loading train dataset from ../bert_data/eLife/eLife.train.1.bert.pt, number of examples: 2001

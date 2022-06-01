@@ -1,0 +1,631 @@
+[2022-04-24 13:36:26,352 INFO] Loading checkpoint from ../models/eLife/model_step_1000.pt
+[2022-04-24 13:36:32,784 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:36:32,787 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:36:33,217 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:36:44,882 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:36:44,886 INFO] * number of parameters: 120905729
+[2022-04-24 13:36:53,036 INFO] Validation xent: 5.44296 at step 1000
+[2022-04-24 13:36:53,069 INFO] Loading checkpoint from ../models/eLife/model_step_2000.pt
+[2022-04-24 13:36:59,087 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:36:59,089 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:36:59,514 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:37:02,227 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:37:02,231 INFO] * number of parameters: 120905729
+[2022-04-24 13:37:10,380 INFO] Validation xent: 5.39281 at step 2000
+[2022-04-24 13:37:10,404 INFO] Loading checkpoint from ../models/eLife/model_step_3000.pt
+[2022-04-24 13:37:15,925 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:37:15,928 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:37:16,344 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:37:19,153 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:37:19,156 INFO] * number of parameters: 120905729
+[2022-04-24 13:37:27,258 INFO] Validation xent: 5.3582 at step 3000
+[2022-04-24 13:37:27,267 INFO] Loading checkpoint from ../models/eLife/model_step_4000.pt
+[2022-04-24 13:37:32,978 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:37:32,981 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:37:33,577 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:37:36,248 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:37:36,251 INFO] * number of parameters: 120905729
+[2022-04-24 13:37:44,400 INFO] Validation xent: 5.1403 at step 4000
+[2022-04-24 13:37:44,403 INFO] Loading checkpoint from ../models/eLife/model_step_5000.pt
+[2022-04-24 13:37:49,778 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:37:49,781 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:37:50,300 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:37:52,899 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:37:52,902 INFO] * number of parameters: 120905729
+[2022-04-24 13:38:01,059 INFO] Validation xent: 5.04408 at step 5000
+[2022-04-24 13:38:01,062 INFO] Loading checkpoint from ../models/eLife/model_step_6000.pt
+[2022-04-24 13:38:06,193 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:38:06,195 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:38:06,605 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:38:09,155 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:38:09,159 INFO] * number of parameters: 120905729
+[2022-04-24 13:38:17,301 INFO] Validation xent: 4.88782 at step 6000
+[2022-04-24 13:38:17,307 INFO] Loading checkpoint from ../models/eLife/model_step_7000.pt
+[2022-04-24 13:38:22,173 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:38:22,176 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:38:22,595 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:38:25,140 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:38:25,143 INFO] * number of parameters: 120905729
+[2022-04-24 13:38:33,287 INFO] Validation xent: 5.76865 at step 7000
+[2022-04-24 13:38:33,289 INFO] Loading checkpoint from ../models/eLife/model_step_8000.pt
+[2022-04-24 13:38:38,515 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:38:38,517 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:38:38,942 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:38:41,545 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:38:41,548 INFO] * number of parameters: 120905729
+[2022-04-24 13:38:49,723 INFO] Validation xent: 6.96478 at step 8000
+[2022-04-24 13:38:49,727 INFO] Loading checkpoint from ../models/eLife/model_step_9000.pt
+[2022-04-24 13:38:54,765 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:38:54,768 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:38:55,198 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:38:57,739 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:38:57,743 INFO] * number of parameters: 120905729
+[2022-04-24 13:39:05,905 INFO] Validation xent: 7.88814 at step 9000
+[2022-04-24 13:39:05,910 INFO] Loading checkpoint from ../models/eLife/model_step_10000.pt
+[2022-04-24 13:39:10,466 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:39:10,469 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:39:10,896 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:39:13,532 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:39:13,535 INFO] * number of parameters: 120905729
+[2022-04-24 13:39:21,698 INFO] Validation xent: 8.027 at step 10000
+[2022-04-24 13:39:21,703 INFO] Loading checkpoint from ../models/eLife/model_step_11000.pt
+[2022-04-24 13:39:26,918 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:39:26,921 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:39:27,345 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:39:29,902 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:39:29,905 INFO] * number of parameters: 120905729
+[2022-04-24 13:39:38,085 INFO] Validation xent: 7.97312 at step 11000
+[2022-04-24 13:39:38,090 INFO] Loading checkpoint from ../models/eLife/model_step_12000.pt
+[2022-04-24 13:39:42,800 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:39:42,802 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:39:43,217 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:39:45,792 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:39:45,795 INFO] * number of parameters: 120905729
+[2022-04-24 13:39:53,961 INFO] Validation xent: 8.95906 at step 12000
+[2022-04-24 13:39:53,963 INFO] Loading checkpoint from ../models/eLife/model_step_13000.pt
+[2022-04-24 13:39:59,034 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:39:59,036 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:39:59,460 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:40:02,070 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:40:02,090 INFO] * number of parameters: 120905729
+[2022-04-24 13:40:10,253 INFO] Validation xent: 9.03387 at step 13000
+[2022-04-24 13:40:10,258 INFO] Loading checkpoint from ../models/eLife/model_step_14000.pt
+[2022-04-24 13:40:15,544 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:40:15,546 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:40:15,963 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:40:18,610 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:40:18,613 INFO] * number of parameters: 120905729
+[2022-04-24 13:40:26,833 INFO] Validation xent: 10.1019 at step 14000
+[2022-04-24 13:40:26,835 INFO] Loading checkpoint from ../models/eLife/model_step_15000.pt
+[2022-04-24 13:40:31,285 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:40:31,288 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:40:31,719 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:40:34,259 INFO] Loading valid dataset from ../bert_data/eLife/eLife.valid.0.bert.pt, number of examples: 270
+[2022-04-24 13:40:34,262 INFO] * number of parameters: 120905729
+[2022-04-24 13:40:42,433 INFO] Validation xent: 9.81667 at step 15000
+[2022-04-24 13:40:42,435 INFO] PPL [(4.887822972403632, '../models/eLife/model_step_6000.pt'), (5.044082147986801, '../models/eLife/model_step_5000.pt'), (5.140299631931164, '../models/eLife/model_step_4000.pt')]
+[2022-04-24 13:40:42,435 INFO] Loading checkpoint from ../models/eLife/model_step_6000.pt
+[2022-04-24 13:40:43,227 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:40:43,229 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:40:43,660 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:40:46,258 INFO] Loading test dataset from ../bert_data/eLife/eLife.test.0.bert.pt, number of examples: 270
+[2022-04-24 13:40:46,261 INFO] * number of parameters: 120905729
+[2022-04-24 13:40:57,821 INFO] Rouges at step 6000 
+>> ROUGE-F(1/2/3/l): 19.20/4.44/17.59
+ROUGE-R(1/2/3/l): 11.98/2.76/10.96
+
+[2022-04-24 13:40:57,821 INFO] Validation xent: 5.32369 at step 6000
+[2022-04-24 13:40:57,824 INFO] Loading checkpoint from ../models/eLife/model_step_5000.pt
+[2022-04-24 13:40:58,624 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:40:58,627 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:40:59,053 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:41:01,602 INFO] Loading test dataset from ../bert_data/eLife/eLife.test.0.bert.pt, number of examples: 270
+[2022-04-24 13:41:01,605 INFO] * number of parameters: 120905729
+[2022-04-24 13:41:13,159 INFO] Rouges at step 5000 
+>> ROUGE-F(1/2/3/l): 18.99/4.34/17.49
+ROUGE-R(1/2/3/l): 11.83/2.69/10.89
+
+[2022-04-24 13:41:13,159 INFO] Validation xent: 5.37515 at step 5000
+[2022-04-24 13:41:13,161 INFO] Loading checkpoint from ../models/eLife/model_step_4000.pt
+[2022-04-24 13:41:13,993 INFO] loading configuration file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-config.json from cache at ../temp/4dad0251492946e18ac39290fcfe91b89d370fee250efe9521476438fe8ca185.7156163d5fdc189c3016baca0775ffce230789d7fa2a42ef516483e4ca884517
+[2022-04-24 13:41:13,995 INFO] Model config {
+  "architectures": [
+    "BertForMaskedLM"
+  ],
+  "attention_probs_dropout_prob": 0.1,
+  "finetuning_task": null,
+  "hidden_act": "gelu",
+  "hidden_dropout_prob": 0.1,
+  "hidden_size": 768,
+  "initializer_range": 0.02,
+  "intermediate_size": 3072,
+  "layer_norm_eps": 1e-12,
+  "max_position_embeddings": 512,
+  "model_type": "bert",
+  "num_attention_heads": 12,
+  "num_hidden_layers": 12,
+  "num_labels": 2,
+  "output_attentions": false,
+  "output_hidden_states": false,
+  "pad_token_id": 0,
+  "pruned_heads": {},
+  "torchscript": false,
+  "type_vocab_size": 2,
+  "vocab_size": 30522
+}
+
+[2022-04-24 13:41:14,410 INFO] loading weights file https://s3.amazonaws.com/models.huggingface.co/bert/bert-base-uncased-pytorch_model.bin from cache at ../temp/aa1ef1aede4482d0dbcd4d52baad8ae300e60902e88fcb0bebdec09afd232066.36ca03ab34a1a5d5fa7bc3d03d55c4fa650fed07220e2eeebc06ce58d0e9a157
+[2022-04-24 13:41:16,960 INFO] Loading test dataset from ../bert_data/eLife/eLife.test.0.bert.pt, number of examples: 270
+[2022-04-24 13:41:16,963 INFO] * number of parameters: 120905729
+[2022-04-24 13:41:28,263 INFO] Rouges at step 4000 
+>> ROUGE-F(1/2/3/l): 17.32/3.98/15.94
+ROUGE-R(1/2/3/l): 10.55/2.42/9.71
+
+[2022-04-24 13:41:28,263 INFO] Validation xent: 5.36741 at step 4000
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+270
+270
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+270
+270
+Namespace(accum_count=1, alpha=0.95, batch_size=3000, beam_size=5, bert_data_path='../bert_data/eLife/eLife', beta1=0.9, beta2=0.999, block_trigram=True, dec_dropout=0.2, dec_ff_size=2048, dec_heads=8, dec_hidden_size=768, dec_layers=6, enc_dropout=0.2, enc_ff_size=512, enc_hidden_size=512, enc_layers=6, encoder='bert', ext_dropout=0.2, ext_ff_size=2048, ext_heads=8, ext_hidden_size=768, ext_layers=2, finetune_bert=True, generator_shard_size=32, gpu_ranks=[0], label_smoothing=0.1, large=False, load_from_extractive='', log_file='../logs/ext_eLife_eval', lr=1, lr_bert=0.002, lr_dec=0.002, max_grad_norm=0, max_length=1024, max_pos=1024, max_tgt_len=200, min_length=50, mode='validate', model_path='../models/eLife', optim='adam', param_init=0, param_init_glorot=True, recall_eval=False, report_every=1, report_rouge=True, result_path='../logs/ext_bert_eLife_val', save_checkpoint_steps=5, seed=666, sep_optim=True, share_emb=False, task='ext', temp_dir='../temp', test_all=True, test_batch_size=500, test_from='', test_start_from=-1, train_from='', train_steps=1000, use_bert_emb=False, use_interval=True, visible_gpus='1', warmup_steps=8000, warmup_steps_bert=8000, warmup_steps_dec=8000, world_size=1)
+gpu_rank 0
+270
+270
